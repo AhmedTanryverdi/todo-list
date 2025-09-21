@@ -1,0 +1,28 @@
+{
+	"name": "todo-list",
+	"version": "1.0.0",
+	"description": "Web project in JavaScript",
+	"main": "index.js",
+	"scripts": {
+		"prod": "webpack --mode=production",
+		"dev": "webpack serve  --mode=development",
+		"start": "webpack"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.28.4",
+		"@babel/preset-env": "^7.28.3",
+		"babel-loader": "^10.0.0",
+		"css-loader": "^7.1.2",
+		"html-webpack-plugin": "^5.6.4",
+		"sass": "^1.93.0",
+		"sass-loader": "^16.0.5",
+		"style-loader": "^4.0.0",
+		"ts-loader": "^9.5.4",
+		"typescript": "^5.9.2",
+		"webpack": "^5.101.3",
+		"webpack-cli": "^4.10.0",
+		"webpack-dev-server": "^4.15.2"
+	}
+}
