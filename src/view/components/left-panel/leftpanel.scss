@@ -1,0 +1,113 @@
+.left-panel {
+	width: 272px;
+	padding: 10px;
+	margin-left: 8px;
+	margin-top: 8px;
+	border-radius: 5px;
+	background-color: #fff;
+
+	hr {
+		height: 2px;
+		margin: 20px 0;
+		border-style: dashed;
+		border-bottom-color: rgb(247, 247, 247);
+		border-left-color: rgb(17, 17, 17);
+		border-right-color: rgb(17, 17, 17);
+		border-top-color: rgb(197, 197, 197);
+		color: rgb(17, 17, 17);
+	}
+	.header {
+		width: 100%;
+		font-family: Arial, Helvetica, sans-serif;
+		&__title {
+			height: 28.8px;
+			margin: 10px 0;
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 29.8%;
+			display: flex;
+			align-items: center;
+		}
+
+		&__example {
+			height: 16px;
+			margin-top: 10px;
+			font-size: 14px;
+			font-weight: 500;
+		}
+
+		&__link {
+			width: auto;
+			height: auto;
+			color: rgb(184, 63, 69);
+			font-size: 14px;
+			font-weight: 400;
+		}
+	}
+
+	.blockquote {
+		width: 100%;
+
+		span {
+			font-size: 55px;
+			position: absolute;
+			color: rgb(17, 17, 17);
+			opacity: 0.15;
+			font-weight: 300;
+			font-style: italic;
+		}
+
+		span:first-child {
+			top: 3px;
+			left: 5px;
+		}
+
+		span:last-child {
+			right: 5px;
+			bottom: -20px;
+		}
+
+		&__content {
+			padding: 10px;
+			font-size: 15px;
+			font-weight: 300;
+			background-color: #f1f1f1;
+			line-height: 120%;
+			border-radius: 5px;
+			margin: 20px 0 0 0;
+			position: relative;
+		}
+
+		&__content::after {
+			content: "";
+			position: absolute;
+			right: 20px;
+			bottom: 52px;
+			border-left: 20px solid transparent;
+			border-right: 20px solid transparent;
+			border-top: 25px solid #f1f1f1;
+		}
+
+		&__footer {
+			display: flex;
+			justify-content: flex-end;
+			margin: 30px 0;
+			&_link {
+				color: rgb(184, 63, 69);
+				font-size: 14px;
+				font-weight: 400;
+			}
+		}
+	}
+
+	.footer {
+		&__content {
+			font-size: 14px;
+			line-height: 19.6px;
+
+            &_link{
+                color: rgb(184, 63, 69);
+            }
+		}
+	}
+}
